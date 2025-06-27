@@ -1,0 +1,199 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage{lmodern}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+ \usepackage[sfdefault]{FiraSans}
+ \usepackage[sfdefault]{roboto}
+ \usepackage[sfdefault]{noto-sans}
+ \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{center}
+    \textbf{\Huge \scshape Ashish Prasad} \\ \vspace{10pt}
+    \small \href{mailto:email@example.com}{{ashishprasad949@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/ashudevcodes/}{{\underline{linkedin.com/in/ashudevcodes}}} $|$
+    \href{https://github.com/ashudevcodes}{{\underline{github.com/ashudevcodes}}}    
+\end{center}
+
+\section{Technical Skills}
+    \resumeItemListStart
+        \resumeItem{\textbf{Programming Languages : }{Java, Python, C++, GoLang, Lua}}
+        \resumeItem{\textbf{Web Technologies : }{HTTP, WebSocket, TCP/UDP, JavaScript}}
+        \resumeItem{\textbf{Tools \& Technologies : }{Git, OS, Vim, Software Development}}
+\resumeItemListEnd
+
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Back End Developer - Part-time}{Kolkata, West Bengal - Remote}
+    {GoTrans Logistics }{May 2024 - Mar 2025}
+        \resumeItemListStart
+            \resumeItem{Developed and deployed RESTful APIs handling 1000+ daily requests with 99.9\% uptime using Node.js and Express.js}
+            \resumeItem{Designed and implemented JWT-based authentication system supporting 500+ active users with zero security breaches}
+        \resumeItemListEnd
+        
+\resumeSubheading
+    {Open Source Contributor}{}
+    {GitHub}{Jan 2023 - Present}
+        \resumeItemListStart
+            \resumeItem{Resolved bugs in popular movie streaming application improving user experience for 1000+ users}
+            \resumeItem{Contributed 20+ pull requests with 95\% acceptance rate across multiple open-source projects}
+            \resumeItem{Collaborated with global developers, adhering to best practices in code review and version control}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+        {\textbf{Anonymous Writing Blog Web App}}
+        {{$|$
+            \emph{\href{https://github.com/ashudevcodes/Blog-application}{Code}}
+            $|$ 
+            \emph{\href{http://blog-application-sand-nu.vercel.app}{Live}} $|$
+        }}
+            \resumeItemListStart
+                \resumeItem{Architected and deployed full-stack blogging platform using React, TypeScript, and Node.js}
+                \resumeItem{Implementing an automated content filtering system using natural language processing to maintain a respectful online environment}
+                \resumeItem{Designed an intuitive user interface for effortless blog management and photo sharing}
+                \resumeItem{Technologies used: React, TypeScript, Node.js, MongoDB, Express.js, NLP}
+        \resumeItemListEnd
+
+\resumeProjectHeading
+        {\textbf{Googel Map Lite}}
+        {{ $|$ \emph{\href{https://github.com/ashudevcodes/web-selfie-app}{Code}} $|$  \emph{\href{http://dataselfieapp.vercel.app}{Live}} $|$
+        }}
+            \resumeItemListStart
+                \resumeItem{Developed a mini map app that shows user location with 99\% accuracy }
+                \resumeItem{also shows the international space station location by getting the location data from ISS API}
+                \resumeItem{uses open source map library to get the map tiles for visualizing locations}
+                \resumeItem{Technologies used: HTML, CSS, JavaScript, OpenLayers, ISS API}
+\resumeItemListEnd
+        
+
+\resumeProjectHeading
+        {\textbf{Steam Game Recommendation System}}
+        {{$|$
+            \emph{\href{https://github.com/ashudevcodes/Steam-Game-Recommendation-System}{Code}}
+            $|$
+            \emph{\href{https://huggingface.co/spaces/ashudevcodes/Steam-game-Recommendation-System}{Live}} $|$
+        }}
+            \resumeItemListStart
+                \resumeItem{Engineered a personalized game recommendation engine using advanced machine learning techniques}
+                \resumeItem{Processed and analyzed a dataset of over 1,800 games to provide accurate, user-tailored suggestions}
+                \resumeItem{Implemented natural language processing to extract key insights from game descriptions, significantly improving recommendation accuracy}
+\resumeItemListEnd
+
+\resumeProjectHeading
+        {\textbf{MongoDB-Talker}}
+        {{$|$
+            \emph{\href{https://github.com/ashudevcodes/Talk-to-MongoDB-Database}{Code }} $|$
+        }}
+            \resumeItemListStart
+                \resumeItem{Developed a secure user authentication system using MongoDB for efficient data storage and retrieval}
+                \resumeItem{Integrated Bcrypt for robust password hashing, enhancing user data protection}
+                \resumeItem{Implemented JWT authentication for stateless, secure API requests}
+                \resumeItem{Technologies used: MongoDB, Node.js, Express.js, Bcrypt, JWT}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Education}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+    {Arka Jain University}{Mohanpur, Jharkhand}
+    {Bachelor Of Computer application}{Oct 2022 - April 2024}
+
+    % ----- CGPA & Coursework is optional, feel free to remove them
+    \resumeItemListStart
+        \resumeItem{Coursework: Data Structures and Algorithms, Object-Oriented Programming, Database Management Systems, Artificial Intelligence, Software development}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+\end{document}
