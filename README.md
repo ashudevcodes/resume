@@ -1,4 +1,4 @@
-# Latex create resume for me
+# Real 🧬 Inventory and Abilities
 
 <kbd>
    <img src="assets/screenshort.png">
