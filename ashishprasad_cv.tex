@@ -13,24 +13,17 @@
 \usepackage[english]{babel}
 \usepackage{tabularx}
 
-
 %----------FONT OPTIONS----------
-% sans-serif
- \usepackage[sfdefault]{FiraSans}
- \usepackage[sfdefault]{roboto}
- \usepackage[sfdefault]{noto-sans}
- \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
-
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
+
+\usepackage[sfdefault]{FiraSans}
+\usepackage[sfdefault]{roboto}
+\usepackage[sfdefault]{noto-sans}
+\usepackage[default]{sourcesanspro}
 
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
@@ -94,112 +87,96 @@
 \begin{document}
 \begin{center}
     \textbf{\Huge \scshape Ashish Prasad} \\ \vspace{10pt}
-    \small \href{mailto:email@example.com}{{ashishprasad949@gmail.com}} $|$ 
-    \href{https://github.com/ashudevcodes}{{Jamshedpur, Jharkhand, 831006}} $|$    
-    \href{https://www.linkedin.com/in/ashudevcodes/}{{\underline{linkedin.com/in/ashudevcodes}}} $|$
-    \href{https://github.com/ashudevcodes}{{\underline{github.com/ashudevcodes}}}    
+    \small \href{mailto:ashishprasad949@gmail.com}{ashishprasad949@gmail.com} $|$ 
+    Jamshedpur, Jharkhand, India $|$
+    \href{https://github.com/ashudevcodes}{github.com/ashudevcodes} $|$
+    \href{https://linkedin.com/in/ashudevcodes}{linkedin.com/in/ashudevcodes}
 \end{center}
 
 \section{Professional Summary}
-    \resumeItemListStart
-        \resumeItem{Software Developer with 1+ years of backennd development experience specializing in JavaScript, java and PostgreSQL. Domain expert in Logistics and Software Development companies.}
+\resumeItemListStart
+    \resumeItem{Backend/Full Stack Developer with 1+ years of experience designing and deploying scalable web applications and RESTful APIs. Proficient in JavaScript, Python, Java, and cloud technologies (AWS, Docker). Demonstrated impact in logistics tech and open source. Strong problem-solving, collaboration, and communication skills.}
 \resumeItemListEnd
 
 \section{Technical Skills}
-    \resumeItemListStart
-        \resumeItem{\textbf{Programming Languages : }{Java, Python, JavaScript, C++, GoLang, Lua}}
-        \resumeItem{\textbf{Web Technologies : }{HTTP, WebSocket, TCP/UDP, Node, SpringBoot, Django}}
-        \resumeItem{\textbf{Tools \& Technologies : }{Git, OS, Vim, Software Development}}
+\resumeItemListStart
+    \resumeItem{\textbf{Languages:} JavaScript (Node.js, TypeScript), Python, Java, C++, Go, Lua}
+    \resumeItem{\textbf{Web/Frameworks:} Node.js, Express.js, React, Spring Boot, Django, REST APIs, WebSocket, HTTP, TCP/UDP}
+    \resumeItem{\textbf{Cloud/DevOps:} AWS (EC2, S3, Lambda), Docker, CI/CD (GitHub Actions), Linux}
+    \resumeItem{\textbf{Databases:} MongoDB, PostgreSQL, MySQL}
+    \resumeItem{\textbf{Tools:} Git, Vim, Jira, Postman}
 \resumeItemListEnd
 
 \section{Work Experience}
-  \resumeSubHeadingListStart
+\resumeSubHeadingListStart
 
-  \resumeSubheading
-    {Back End Developer - Part-time}{Kolkata, West Bengal - Remote}
-    {GoTrans Logistics }{May 2024 - Mar 2025}
-        \resumeItemListStart
-            \resumeItem{Developed and deployed RESTful APIs handling 1000+ daily requests with 99.9\% uptime using Node.js and Express.js}
-            \resumeItem{Designed and implemented JWT-based authentication system supporting 500+ active users with zero security breaches}
-        \resumeItemListEnd
-        
+\resumeSubheading
+    {GoTrans Logistics}{Kolkata, West Bengal -- Remote}
+    {Backend Developer}{May 2024 -- Mar 2025}
+    \resumeItemListStart
+        \resumeItem{Developed and maintained RESTful APIs (Node.js, Express.js) handling 1,000+ daily requests with 99.9\% uptime.}
+        \resumeItem{Designed and implemented JWT-based authentication for 500+ active users, achieving zero security breaches.}
+        \resumeItem{Deployed microservices on AWS using Docker, reducing deployment time by 30\%.}
+        \resumeItem{Collaborated with cross-functional teams to deliver features on schedule and improve code quality through code reviews.}
+    \resumeItemListEnd
+
 \resumeSubheading
     {Open Source Contributor}{}
-    {GitHub}{Jan 2023 - Present}
-        \resumeItemListStart
-            \resumeItem{Resolved bugs in popular movie streaming application improving user experience for 1000+ users}
-            \resumeItem{Contributed 20+ pull requests with 95\% acceptance rate across multiple open-source projects}
-            \resumeItem{Collaborated with global developers, adhering to best practices in code review and version control}
-        \resumeItemListEnd
-  \resumeSubHeadingListEnd
+    {GitHub}{Jan 2023 -- Present}
+    \resumeItemListStart
+        \resumeItem{Resolved bugs and enhanced features in a movie streaming app, improving user experience for 1,000+ users.}
+        \resumeItem{Contributed 20+ pull requests with 95\% acceptance rate across multiple open-source projects.}
+        \resumeItem{Collaborated with global teams, following best practices in code review and version control.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
 
 \section{Projects}
-    \resumeSubHeadingListStart
-        \resumeProjectHeading
-        {\textbf{Anonymous Writing Blog Web App}}
-        {{$|$
-            \emph{\href{https://github.com/ashudevcodes/Blog-application}{Code}}
-            $|$ 
-            \emph{\href{http://blog-application-sand-nu.vercel.app}{Live}} $|$
-        }}
-            \resumeItemListStart
-                \resumeItem{Architected and deployed full-stack blogging platform using React, TypeScript, and Node.js}
-                \resumeItem{Implementing an automated content filtering system using natural language processing to maintain a respectful online environment}
-                \resumeItem{Designed an intuitive user interface for effortless blog management and photo sharing}
-                \resumeItem{Technologies used: React, TypeScript, Node.js, MongoDB, Express.js, NLP}
-        \resumeItemListEnd
+\resumeSubHeadingListStart
 
 \resumeProjectHeading
-        {\textbf{Googel Map Lite}}
-        {{ $|$ \emph{\href{https://github.com/ashudevcodes/web-selfie-app}{Code}} $|$  \emph{\href{http://dataselfieapp.vercel.app}{Live}} $|$
-        }}
-            \resumeItemListStart
-                \resumeItem{Developed a mini map app that shows user location with 99\% accuracy }
-                \resumeItem{also shows the international space station location by getting the location data from ISS API}
-                \resumeItem{uses open source map library to get the map tiles for visualizing locations}
-                \resumeItem{Technologies used: HTML, CSS, JavaScript, OpenLayers, ISS API}
-\resumeItemListEnd
-        
+    {\textbf{Anonymous Writing Blog Web App}}
+    {$|$ \emph{\href{https://github.com/ashudevcodes/Blog-application}{Code}} $|$ \emph{\href{http://blog-application-sand-nu.vercel.app}{Live}} $|$}
+    \resumeItemListStart
+        \resumeItem{Built a full-stack blogging platform (React, TypeScript, Node.js, MongoDB, Express.js).}
+        \resumeItem{Implemented automated content filtering using NLP for a safe community.}
+        \resumeItem{Designed intuitive UI/UX for seamless blog management and photo sharing.}
+    \resumeItemListEnd
 
 \resumeProjectHeading
-        {\textbf{Steam Game Recommendation System}}
-        {{$|$
-            \emph{\href{https://github.com/ashudevcodes/Steam-Game-Recommendation-System}{Code}}
-            $|$
-            \emph{\href{https://huggingface.co/spaces/ashudevcodes/Steam-game-Recommendation-System}{Live}} $|$
-        }}
-            \resumeItemListStart
-                \resumeItem{Engineered a personalized game recommendation engine using advanced machine learning techniques}
-                \resumeItem{Processed and analyzed a dataset of over 1,800 games to provide accurate, user-tailored suggestions}
-                \resumeItem{Implemented natural language processing to extract key insights from game descriptions, significantly improving recommendation accuracy}
-\resumeItemListEnd
+    {\textbf{Google Map Lite}}
+    {$|$ \emph{\href{https://github.com/ashudevcodes/web-selfie-app}{Code}} $|$ \emph{\href{http://dataselfieapp.vercel.app}{Live}} $|$}
+    \resumeItemListStart
+        \resumeItem{Developed a mini map app showing user and ISS locations with 99\% accuracy.}
+        \resumeItem{Integrated OpenStreet Map and ISS API for real-time location visualization.}
+    \resumeItemListEnd
 
 \resumeProjectHeading
-        {\textbf{MongoDB-Talker}}
-        {{$|$
-            \emph{\href{https://github.com/ashudevcodes/Talk-to-MongoDB-Database}{Code }} $|$
-        }}
-            \resumeItemListStart
-                \resumeItem{Developed a secure user authentication system using MongoDB for efficient data storage and retrieval}
-                \resumeItem{Integrated Bcrypt for robust password hashing, enhancing user data protection}
-                \resumeItem{Implemented JWT authentication for stateless, secure API requests}
-                \resumeItem{Technologies used: MongoDB, Node.js, Express.js, Bcrypt, JWT}
-\resumeItemListEnd
+    {\textbf{Steam Game Recommendation System}}
+    {$|$ \emph{\href{https://github.com/ashudevcodes/Steam-Game-Recommendation-System}{Code}} $|$ \emph{\href{https://huggingface.co/spaces/ashudevcodes/Steam-game-Recommendation-System}{Live}} $|$}
+    \resumeItemListStart
+        \resumeItem{Engineered a personalized recommendation engine using machine learning and NLP.}
+        \resumeItem{Processed 1,800+ game records to provide accurate, user-tailored suggestions.}
+    \resumeItemListEnd
+
+\resumeProjectHeading
+    {\textbf{MongoDB-Talker}}
+    {$|$ \emph{\href{https://github.com/ashudevcodes/Talk-to-MongoDB-Database}{Code}} $|$}
+    \resumeItemListStart
+        \resumeItem{Built secure user authentication with MongoDB, Bcrypt, and JWT.}
+        \resumeItem{Ensured robust password hashing and stateless API security.}
+    \resumeItemListEnd
 
 \resumeSubHeadingListEnd
 
 \section{Education}
-  \resumeSubHeadingListStart
-
-    \resumeSubheading
+\resumeSubHeadingListStart
+\resumeSubheading
     {Arka Jain University}{Mohanpur, Jharkhand}
-    {Bachelor Of Computer application}{Oct 2022 - April 2024}
-
-    % ----- CGPA & Coursework is optional, feel free to remove them
+    {Bachelor of Computer Applications}{Oct 2022 -- Apr 2024}
     \resumeItemListStart
-        \resumeItem{Coursework: Data Structures and Algorithms, Object-Oriented Programming, Database Management Systems, Artificial Intelligence, Software development}
+        \resumeItem{Coursework: Data Structures \& Algorithms, OOP, DBMS, AI, Software Development}
     \resumeItemListEnd
-  \resumeSubHeadingListEnd
-
+\resumeSubHeadingListEnd
 
 \end{document}
