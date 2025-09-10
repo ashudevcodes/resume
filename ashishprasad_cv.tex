@@ -40,54 +40,53 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-11pt}\scshape\raggedright\Large\bfseries
+}{}{0em}{}[\titlerule \vspace{-5pt}]
 
 %-------------------------
 % Custom commands
-\newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
-}
+% ------------------ Custom commands (replace any existing definitions) ------------------
+\newcommand{\resumeItem}[1]{\item\small{#1}}
 
-\newcommand{\resumeSubheading}[4]{
+\newcommand{\resumeSubheading}[4]{%
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-7pt}%
 }
 
-\newcommand{\resumeSubSubheading}[2]{
+\newcommand{\resumeSubSubheading}[2]{%
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-7pt}%
 }
 
-\newcommand{\resumeProjectHeading}[2]{
+\newcommand{\resumeProjectHeading}[2]{%
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-7pt}%
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
+% default compact list commands
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=1pt, topsep=2pt, parsep=1pt, partopsep=0pt, leftmargin=0.2in]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
+% a special ultra-compact environment you can use for Technical Skills only
+\newenvironment{compactitem}{\begin{itemize}[itemsep=0pt, topsep=0pt, parsep=0pt, partopsep=0pt, leftmargin=0.15in]}{\end{itemize}\vspace{-5pt}}
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 \begin{center}
-    \textbf{\Huge \scshape Ashish Prasad} \\ \vspace{11pt}
-    \textbf{\Huge \scshape software developer} \\ \vspace{5pt}
+    {\Huge \scshape Ashish Prasad} \\ \vspace{4pt}
+    {\large \scshape Software Developer} \\ \vspace{8pt}
     \small \href{mailto:ashishprasad949@gmail.com}{ashishprasad949@gmail.com} $|$ 
     Jamshedpur, Jharkhand, India $|$
     \href{https://github.com/ashudevcodes}{github.com/ashudevcodes} $|$
@@ -96,14 +95,14 @@
 
 \section{Professional Summary}
 \resumeItemListStart
-    \resumeItem{Backend/Full Stack Development with 1+ years of experience designing and deploying scalable web applications and RESTful APIs. Proficient in JavaScript, Python, Java, and cloud technologies (AWS, Docker). Demonstrated impact in logistics tech and open source. Strong problem-solving, collaboration, and communication skills.}
+    \resumeItem{Backend/Full Stack Developer with 1+ years of experience designing and deploying scalable web applications and RESTful APIs. Skilled in JavaScript, Python, Java, and cloud technologies (AWS, Docker). Proven impact in logistics tech and open source, with strong problem-solving, collaboration, and communication skills.}
 \resumeItemListEnd
 
 \section{Technical Skills}
 \resumeItemListStart
     \resumeItem{\textbf{Languages:} JavaScript (Node.js, TypeScript), Python, Java, C++, Go, Lua}
-    \resumeItem{\textbf{Web/Frameworks:} Node.js, Express.js, React, Spring Boot, Django, REST APIs, WebSocket, HTTP, TCP/UDP}
-    \resumeItem{\textbf{Cloud/DevOps:} AWS (EC2, S3, Lambda), Docker, CI/CD (GitHub Actions), Linux}
+    \resumeItem{\textbf{Web/Frameworks:} Node.js, Express.js, React, Spring Boot, Flask, REST APIs, WebSocket, HTTP, TCP/UDP}
+    \resumeItem{\textbf{Cloud/DevOps:} AWS (EC2), Docker, CI/CD (GitHub Actions), Linux}
     \resumeItem{\textbf{Databases:} MongoDB, PostgreSQL, MySQL}
     \resumeItem{\textbf{Tools:} Git, Vim, Jira, Postman}
 \resumeItemListEnd
@@ -112,30 +111,36 @@
 \resumeSubHeadingListStart
 
 \resumeSubheading
-{Go Translogistics } {Kolkata, West Bengal, Remote}
-{Backend Developer - {\underline{\href{https://gotranslogistics.in/}{gotranslogistics.in}}}}{May 2024 -- May 2025}
+    {Go Translogistics } {Kolkata, West Bengal, Remote}
+    {Backend Developer - {\underline{\href{https://gotranslogistics.in/}{gotranslogistics.in}}}}{May 2024 -- May 2025}
     \resumeItemListStart
-        \resumeItem{Designed and implemented JWT-based authentication for 500+ active users, achieving zero security breaches.}
-        \resumeItem{Developed and maintained RESTful APIs (Node.js, Express.js) handling 1,000+ daily requests with 99.9\% uptime.}
-        \resumeItem{Collaborated with cross-functional teams to deliver features on schedule and improve code quality through code reviews.}
-        \resumeItem{Deployed microservices on AWS using Docker, reducing deployment time by 30\%.}
+        \resumeItem{Designed and implemented JWT-based authentication, securing access for 500+ users with zero breaches.}
+        \resumeItem{Developed and maintained RESTful APIs with Node.js and Express.js, enabling 1,000+ daily transactions at 99.9\% uptime through optimized middleware and database queries.}
+        \resumeItem{Reduced deployment time by 30\% by containerizing microservices with Docker and automating deployments on AWS.}
     \resumeItemListEnd
 
-
 \resumeSubheading
-    {Full Stack Intern}{Raurkela, Odisha, India}
-    {IT Developers - {\underline{\href{https://www.itdeveloper.in/}{itdeveloper.in}}}}{Jan 2023 -- Mar 2023}
+    {IT Developers}{Rourkela, Odisha, India}
+    {Full Stack Intern - {\underline{\href{https://www.itdeveloper.in/}{itdeveloper.in}}}}{Jan 2023 -- Mar 2023}
     \resumeItemListStart
-        \resumeItem{Working on full-stack anonymous blogging platform.}
-        \resumeItem{Features I manage secure anonymous posting, Blog entry editing and deletion}
-        \resumeItem{Optimize webssite for responsive design for seamless user experience across devices.}
+        \resumeItem{Built core features for an anonymous blogging platform, including secure posting, editing, and deletion.}
+        \resumeItem{Optimized website for responsive design, ensuring seamless user experience across devices.}
     \resumeItemListEnd
 
 \resumeSubheading
     {Open Source Contributor}{}
-    {GitHub}{Jan 2023}
+	{OpenSauced App - \textbf{{(458 Users)}}}{Aug 2024}
     \resumeItemListStart
-        \resumeItem{Resolved bugs and enhanced features in a movie streaming app, improving user experience for 1,000+ users.}
+        \resumeItem{Improved onboarding modal behavior, delivering smoother and consistent user navigation by refactoring component logic and fixing state handling.}
+		\resumeItem{\underline{\href{https://github.com/open-sauced/app/pull/3660}{PR \#3660}} -- Contribution merged into main repository.}
+    \resumeItemListEnd
+\vspace{-11pt}
+\resumeSubheading
+    {}{}
+	{Movie-Web - \textbf{(2.4k Users)}}{Jan 2023}
+    \resumeItemListStart
+	    \resumeItem{Fixed bugs and added features to improve application stability and user experience.}
+	    \resumeItem{Contributed multiple PRs in collaboration with maintainers to enhance code quality.}
     \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -150,9 +155,9 @@
         $|$ \emph{\href{https://github.com/ashudevcodes/Blog-application}{Code}} $|$
     }
     \resumeItemListStart
-        \resumeItem{Implemented automated content filtering using NLP for a safe community.}
+        \resumeItem{Implemented automated content filtering using NLP to maintain a safe community.}
         \resumeItem{Designed intuitive UI/UX for seamless blog management and photo sharing.}
-        \resumeItem{Built a full-stack blogging platform (React, TypeScript, Node.js, MongoDB, Express.js).}
+        \resumeItem{Built a full-stack blogging platform with React, TypeScript, Node.js, MongoDB, and Express.js.}
     \resumeItemListEnd
 
 \resumeProjectHeading
@@ -160,11 +165,10 @@
     {
         \underline{\emph{\href{http://dataselfieapp.vercel.app}{dataselfieapp.vercel.app}}}      
         $|$ \emph{\href{https://github.com/ashudevcodes/web-selfie-app}{Code}} $|$
-
     }
     \resumeItemListStart
-        \resumeItem{Integrated OpenStreet Map and ISS API for real-time location visualization.}
-        \resumeItem{Developed a mini map app showing user and ISS locations with 99\% accuracy.}
+        \resumeItem{Integrated OpenStreetMap and ISS API for real-time location visualization.}
+        \resumeItem{Developed a lightweight map app showing user and ISS locations with 99\% accuracy.}
     \resumeItemListEnd
 
 \resumeProjectHeading
@@ -175,15 +179,15 @@
     }
     \resumeItemListStart
         \resumeItem{Processed 1,800+ game records to provide accurate, user-tailored suggestions.}
-        \resumeItem{Engineered a personalized recommendation engine using machine learning and NLP.}
+        \resumeItem{Engineered a recommendation engine using machine learning and NLP for personalization.}
     \resumeItemListEnd
 
 \resumeProjectHeading
     {\textbf{MongoDB-Talker}}
     {$|$ \emph{\href{https://github.com/ashudevcodes/Talk-to-MongoDB-Database}{Code}} $|$}
     \resumeItemListStart
+        \resumeItem{Implemented secure user authentication with MongoDB, Bcrypt, and JWT.}
         \resumeItem{Ensured robust password hashing and stateless API security.}
-        \resumeItem{Built secure user authentication with MongoDB, Bcrypt, and JWT.}
     \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -193,9 +197,6 @@
 \resumeSubheading
     {Arka Jain University}{Mohanpur, Jharkhand}
     {Bachelor of Computer Applications}{Oct 2022 -- Apr 2024}
-    \resumeItemListStart
-        \resumeItem{Coursework: Data Structures \& Algorithms, OOP, DBMS, AI, Software Development}
-    \resumeItemListEnd
 \resumeSubHeadingListEnd
 
 \end{document}
