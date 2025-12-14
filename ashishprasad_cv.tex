@@ -22,7 +22,7 @@
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
 \addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\textheight}{2.0in}
 
 \urlstyle{same}
 \raggedbottom
@@ -38,17 +38,17 @@
 \newcommand{\resumeItem}[1]{\item\small{#1}}
 
 \newcommand{\resumeSubheading}[4]{%
-  \vspace{-2pt}\item
+  \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
+      \textbf{#1} & \small#2 \\
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}%
 }
 
 \newcommand{\resumeProjectHeading}[2]{%
-    \item
+  \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
+      \small#1 & \small#2 \\
     \end{tabular*}\vspace{-7pt}%
 }
 
@@ -73,17 +73,12 @@
     \href{https://linkedin.com/in/ashudevcodes}{linkedin.com/in/ashudevcodes}
 \end{center}
 
-\section{Professional Summary}
-\resumeItemListStart
-    \resumeItem{Backend/Full Stack Developer with 1+ years of experience designing and deploying scalable web applications and RESTful APIs. Skilled in JavaScript, Python, Java, and cloud technologies (AWS, Docker). Proven impact in logistics tech and open source, with strong problem-solving, collaboration, and communication skills.}
-\resumeItemListEnd
-
 \section{Technical Skills}
 \resumeItemListStart
-    \resumeItem{\textbf{Languages:} Python, JavaScript(TS), SQL, C, C++11/99, Golang, Lua, Bash/Shell}
-    \resumeItem{\textbf{Cloud/DevOps:} Docker, AWS (EC2), CI/CD (GitHub Actions)}
+    \resumeItem{\textbf{Languages:} Java, Python, SQL, C, C++11/99, Golang, Lua, Bash/Shell}
+    % \resumeItem{\textbf{Cloud/DevOps:} Docker, AWS (EC2), CI/CD (GitHub Actions)}
     \resumeItem{\textbf{Databases:} PostgreSQL, SQLite, MySQL, MongoDB}
-    \resumeItem{\textbf{Tools:} Git, Vim, Linux, Make}
+    \resumeItem{\textbf{Tools:} Git, Vim, Linux, Make, Gradlew, UV, love2d}
 \resumeItemListEnd
 
 \section{Work Experience}
@@ -105,19 +100,21 @@
         \resumeItem{Optimized website for responsive design, ensuring seamless user experience across devices.}
     \resumeItemListEnd
 
-\resumeSubheading
-    {Open Source Contributor}{}{OpenSauced App - \textbf{(458 Users)}}{Aug 2024}
-    \resumeItemListStart
-        \resumeItem{Improved onboarding modal behavior, delivering smoother navigation by refactoring component logic.}
-        \resumeItem{\underline{\href{https://github.com/open-sauced/app/pull/3660}{PR \#3660}} -- Contribution merged into main repository.}
-    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\section{Open Source Contribution}
+\resumeSubHeadingListStart
 
 \resumeSubheading
-    {}{}{Movie-Web - \textbf{(2.4k Users)}}{Jan 2023}
-    \resumeItemListStart
-        \resumeItem{Fixed bugs and added features to improve application stability and user experience.}
-        \resumeItem{Collaborated with maintainers to enhance code quality and functionality.}
-    \resumeItemListEnd
+{OpenSauced}{Oakland, CA, Remote}
+{Insights dashboard Application - \textbf{(458 Users)}}{Aug 2024}
+\resumeItemListStart
+
+\resumeItem{Improved onboarding modal behavior, delivering smoother navigation by refactoring component logic.}
+\resumeItem{\underline{\href{https://github.com/open-sauced/app/pull/3660}{PR \#3660}} -- Contribution merged into main repository.}
+
+\resumeItemListEnd
 
 \resumeSubHeadingListEnd
 
@@ -125,15 +122,39 @@
 \resumeSubHeadingListStart
 
 \resumeProjectHeading
-    {\textbf{Anonymous Writing Blog Web App}}{
-        \underline{\emph{\href{http://blog-application-sand-nu.vercel.app}{freedomblog.vercel.app}}} 
-        $|$ \emph{\href{https://github.com/ashudevcodes/Blog-application}{Code}} $|$
-    }
+	{\textbf{Ponio gamepad}}
+	{
+	  \underline{\emph{\href{https://github.com/ashudevcodes/ponio}{Github}}}      
+	}
+	\resumeItemListStart
+	\resumeItem{This application was written using C and Java, containing a Linux server and an Android client application.}
+	\resumeItem{Ponio allows users to play AAA title games without purchasing an expensive controller. It runs on all Android devices requiring only >4MB storage and >80MB RAM}
+	\resumeItem{The application uses the TCP protocol for communication and supports offline gamelay with \textasciitilde
+	0 ms latency}
+
+    \resumeItemListEnd
+
+\resumeProjectHeading
+    {\textbf{WebScrapper}}
+	{
+	  \underline{\emph{\href{https://github.com/ashudevcodes/Flipkart-WebScreping}{Github}}}      
+	}
     \resumeItemListStart
-        \resumeItem{Implemented automated content filtering using NLP to maintain a safe community.}
+        \resumeItem{A utility program to extract Flipkart search result products and store them in a CSV file for data analysis}
         \resumeItem{Designed intuitive UI/UX for seamless blog management and photo sharing.}
         \resumeItem{Built a full-stack blogging platform with React, TypeScript, Node.js, MongoDB, and Express.js.}
     \resumeItemListEnd
+
+\resumeProjectHeading
+    {\textbf{VeggiPrice}}{
+        \underline{\emph{\href{https://veggiprice.vercel.app/}{veggiprice.vercel.app}}}      
+        $|$ \emph{\href{https://github.com/ashudevcodes/vegetable-detection}{Code}} $|$
+    }
+    \resumeItemListStart
+        \resumeItem{Implemented secure user authentication with MongoDB, Bcrypt, and JWT.}
+        \resumeItem{Ensured robust password hashing and stateless API security.}
+    \resumeItemListEnd
+
 
 \resumeProjectHeading
     {\textbf{Google Map Lite}}{
@@ -145,6 +166,17 @@
         \resumeItem{Developed a lightweight map app showing user and ISS locations with 99\% accuracy.}
     \resumeItemListEnd
 
+	\resumeProjectHeading
+	{\textbf{Anonymous Writing Blog Web App}}{
+	  \underline{\emph{\href{http://blog-application-sand-nu.vercel.app}{freedomblog.vercel.app}}} 
+	  $|$ \emph{\href{https://github.com/ashudevcodes/Blog-application}{Code}} $|$
+	}
+	\resumeItemListStart
+	\resumeItem{Implemented automated content filtering using NLP to maintain a safe community.}
+	\resumeItem{Designed intuitive UI/UX for seamless blog management and photo sharing.}
+	\resumeItem{Built a full-stack blogging platform with React, TypeScript, Node.js, MongoDB, and Express.js.}
+	\resumeItemListEnd
+
 \resumeProjectHeading
     {\textbf{Steam Game Recommendation System}}{
         $|$ \emph{\href{https://github.com/ashudevcodes/Steam-Game-Recommendation-System}{Code}}
@@ -155,12 +187,6 @@
         \resumeItem{Engineered a recommendation engine using machine learning and NLP for personalization.}
     \resumeItemListEnd
 
-\resumeProjectHeading
-    {\textbf{MongoDB-Talker}}{$|$ \emph{\href{https://github.com/ashudevcodes/Talk-to-MongoDB-Database}{Code}} $|$}
-    \resumeItemListStart
-        \resumeItem{Implemented secure user authentication with MongoDB, Bcrypt, and JWT.}
-        \resumeItem{Ensured robust password hashing and stateless API security.}
-    \resumeItemListEnd
 
 \resumeSubHeadingListEnd
 
